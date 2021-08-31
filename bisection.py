@@ -88,7 +88,7 @@ def bisection(h,g,BEnergy,AoI,M, v1=1,v2=1):
     if LyaAoI1<0:
         LyaAoI1=-LyaAoI1
     LyaAoI2=AoI_change-AverSumAoI
-    LyapnovDrift =-AverSumAoI +100000000*LyaBEnergy1
+    LyapnovDrift =-AverSumAoI +100*LyaBEnergy1
     #LyapnovDrift = -v1 * AverSumAoI  + v2 * B_change
     return LyapnovDrift,AverSumAoI,BEnergy_k,AoI_k
 
